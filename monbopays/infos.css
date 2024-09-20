@@ -1,0 +1,302 @@
+body{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+}
+
+nav{
+  padding: 2px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #076bee;
+  position: relative;
+  height: 70px;
+}
+
+.logo a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+nav ul{
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+nav ul li{
+  list-style-type: none;
+}
+
+nav ul li :hover{
+  background-color: #d33c05;
+  padding: 12px;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.menu-icon{
+  display: none;
+}
+
+.menu-icon i{
+  color: #fff;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+@media (max-width:600px) {
+  nav ul{
+      position: absolute;
+      top: 70px;
+      left: 0;
+      right: 0;
+      flex-direction: column;
+      text-align: center;
+      background: #076bee;
+      gap: 0;
+      overflow: hidden;
+      z-index: 1;
+  }
+  nav ul li{
+      padding: 20px;
+      padding-top: 0;
+  }
+  .menu-icon{
+      display: block;
+  }
+  #menuList{
+      transition: all 0.5s;
+  }
+}
+
+
+
+
+
+.container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #0000001a;
+  max-width: auto;
+  width: auto
+}
+h1 {
+  text-align: center;
+  color: #2c3e50;
+}
+h2 {
+  color: #16a085;
+  margin-top: 20px;
+}
+p {
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+
+@media (max-width: 768px) {
+  h1 {
+      font-size: 1.5em;
+  }
+  h2 {
+      font-size: 1.2em;
+  }
+  p {
+      font-size: 0.9em;
+  }
+}
+@media (max-width: 480px) {
+  h1 {
+      font-size: 1.3em;
+  }
+  h2 {
+      font-size: 1em;
+  }
+  p {
+      font-size: 0.85em;
+  }
+  .container {
+      padding: 15px;
+  }
+}
+
+/* Section Styling */
+section {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading Styles */
+section h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 15px;
+  text-align: left;
+  font-family: 'Georgia', serif;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+}
+
+/* Paragraph Styles */
+section p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 15px;
+  line-height: 1.6;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Strong Tags Styling */
+section p strong {
+  color: #000;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  section {
+      width: 90%;
+      padding: 15px;
+  }
+
+  section h2 {
+      font-size: 1.5rem;
+  }
+
+  section p {
+      font-size: 0.9rem;
+  }
+}
+
+
+/* section__ban5 */
+
+.section__ban5 {
+  display: flex;
+  height: 45vh;
+  padding-bottom: 40px;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 80%;
+  margin: 4rem auto 1rem auto;
+  justify-content: space-between;
+}
+
+.section__ban4-left {
+  height: 100%;
+  flex-basis: 49%;
+  position: relative;
+}
+
+.section__ban4-right {
+  height: 100%;
+  flex-basis: 49%;
+  position: relative;
+}
+
+.section__ban4-left img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.section__ban4-right img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.lien a{
+  color: #fff;
+}
+
+.lien :hover{
+  color: #076bee;
+}
+
+
+
+
+
+/*footer*/
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer-col {
+    margin-bottom: 20px;
+  }
+  
+  .footer-col h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: underline 3px solid #076bee;
+  }
+  
+  .footer-col ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer-col ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-col ul li a{
+      font-size: 16px;
+      text-transform: capitalize;
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 300;
+      color: #bbbbbb;
+      display: block;
+      transition: all 0.3s ease;
+  }
+  .footer-col ul li a:hover{
+      color: #ffffff;
+      padding-left: 8px;
+  }
+  
+  .footer-col .social-links a{
+      display: inline-block;
+      height: 40px;
+      width: 40px;
+      background-color: rgba(255,255,255,0.2);
+      margin:0 10px 10px 0;
+      text-align: center;
+      line-height: 40px;
+      border-radius: 50%;
+      color: #ffffff;
+      transition: all 0.5s ease;
+  }
+  .footer-col .social-links a:hover{
+      color: #076bee;
+      background-color: #ffffff;
+  }
+  
+  footer p {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #ccc;
+  }
+  

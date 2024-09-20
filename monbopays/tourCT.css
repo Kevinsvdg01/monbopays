@@ -1,0 +1,341 @@
+body{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+}
+
+nav{
+  padding: 2px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #076bee;
+  position: relative;
+  height: 70px;
+}
+
+.logo a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+nav ul{
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+nav ul li{
+  list-style-type: none;
+}
+
+nav ul li :hover{
+  background-color: #d33c05;
+  padding: 12px;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.menu-icon{
+  display: none;
+}
+
+.menu-icon i{
+  color: #fff;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+@media (max-width:600px) {
+  nav ul{
+      position: absolute;
+      top: 70px;
+      left: 0;
+      right: 0;
+      flex-direction: column;
+      text-align: center;
+      background: #076bee;
+      gap: 0;
+      overflow: hidden;
+      z-index: 1;
+  }
+  nav ul li{
+      padding: 20px;
+      padding-top: 0;
+  }
+  .menu-icon{
+      display: block;
+  }
+  #menuList{
+      transition: all 0.5s;
+  }
+}
+
+
+/* Style de la bannière */
+
+.banner {
+    width: 100%;
+    height: 200px;
+    background-image: url('photobf//rompnu1.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  @media only screen and (max-width: 760px) {
+    .banner {
+        background-image: url('photobf/rompnu2.jpg');
+    }
+  }
+
+
+/*section popular-products*/
+
+
+
+.popular-products {
+  padding: 50px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.popular-products h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  text-decoration: underline 4px solid red;
+  padding-bottom: 20px;
+}
+
+.product-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.product-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  width: 130px;
+  text-align: center;
+  box-shadow: 0 4px 8px #0000001a;
+  transition: transform 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.product-card h3 {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.product-card p {
+  font-size: 0.8em;
+  background-color: #007bff;
+  color: #fff;
+}
+.product-card i {
+  color: #fff;
+  font-size: 0.8em;
+}
+
+.product-card button {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 0.8em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.product-card button:hover {
+  background-color: #218838;
+}
+
+
+
+  /*welcome..*/
+
+  .welcome-message {
+    padding: 1rem 1rem;
+    background-color: #f8f8f8;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px #0000001a;
+    margin: 2rem 0;
+  }
+  
+  .welcome-message h2 {
+    font-size: 1.5rem;
+    color: #d33c05;
+    margin-bottom: 1rem;
+  }
+  
+  .welcome-message p {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 0;
+  }
+
+
+
+
+
+/*Cultures et Traditions*/
+
+   h2, h3 {
+    text-align: center;
+    color: #444;
+}
+
+  .container h2{
+    text-decoration: underline 4px solid green;
+  }
+
+.section {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 10px 14px #0000001a;
+    display: flex;
+    align-items: center;
+}
+
+.section img {
+    width: 50%;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.section .text {
+    width: 50%;
+}
+
+.section h2 {
+    margin-top: 0;
+}
+
+.section p {
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .section {
+        flex-direction: column;
+    }
+    .section img,
+    .section .text {
+        width: 100%;
+    }
+    .section img {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+
+.lien a{
+  color: #fff;
+}
+
+.lien :hover{
+  color: #076bee;
+}
+
+
+
+
+/*footer*/
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer-col {
+    margin-bottom: 20px;
+  }
+  
+  .footer-col h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: underline 3px solid #076bee;
+  }
+  
+  .footer-col ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer-col ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-col ul li a{
+      font-size: 16px;
+      text-transform: capitalize;
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 300;
+      color: #bbbbbb;
+      display: block;
+      transition: all 0.3s ease;
+  }
+  .footer-col ul li a:hover{
+      color: #ffffff;
+      padding-left: 8px;
+  }
+  
+  .footer-col .social-links a{
+      display: inline-block;
+      height: 40px;
+      width: 40px;
+      background-color: rgba(255,255,255,0.2);
+      margin:0 10px 10px 0;
+      text-align: center;
+      line-height: 40px;
+      border-radius: 50%;
+      color: #ffffff;
+      transition: all 0.5s ease;
+  }
+  .footer-col .social-links a:hover{
+      color: #076bee;
+      background-color: #ffffff;
+  }
+  
+  footer p {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #ccc;
+  }
+  

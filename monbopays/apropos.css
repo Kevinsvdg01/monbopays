@@ -1,0 +1,358 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+  }
+  
+  nav{
+    padding: 2px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #076bee;
+    position: relative;
+    height: 70px;
+  }
+  
+  .logo a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+  }
+  
+  nav ul{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+  }
+  
+  nav ul li{
+    list-style-type: none;
+  }
+  
+  nav ul li :hover{
+    background-color: #d33c05;
+    padding: 12px;
+  }
+  
+  nav ul li a{
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .menu-icon{
+    display: none;
+  }
+  
+  .menu-icon i{
+    color: #fff;
+    cursor: pointer;
+    font-size: 25px;
+  }
+  
+  @media (max-width:600px) {
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        background: #076bee;
+        gap: 0;
+        overflow: hidden;
+        z-index: 1;
+    }
+    nav ul li{
+        padding: 20px;
+        padding-top: 0;
+    }
+    .menu-icon{
+        display: block;
+    }
+    #menuList{
+        transition: all 0.5s;
+    }
+  }
+
+
+/* Style de la bannière */
+
+.banner {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+}
+
+.banner h2,
+.banner p {
+    position: absolute;
+    left: 50%;
+    color: #fff;
+    transform: translateX(-50%);
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+.banner h2 {
+    top: 24%;
+    font-size: 20px;
+    margin: 0;
+}
+
+.banner p {
+    top: 47%;
+    font-size: 17px;
+    width: 80%;
+}
+
+
+  /*section welcome*/
+
+  .welcome-message {
+    padding: 1rem 1rem;
+    background-color: #f8f8f8;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px #0000001a;
+    margin: 2rem 0;
+  }
+  
+  .welcome-message h2 {
+    font-size: 1.5rem;
+    color: #d33c05;
+    margin-bottom: 1rem;
+  }
+  
+  .welcome-message p {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 0;
+    padding-bottom: 15px;
+  }
+
+
+/* Section pour Ouagadougou et Bobo-Dioulasso */
+.pourouaga,
+.pourbobo {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Conteneur des images */
+.conteneurouaga,
+.bobo {
+    text-align: center;
+}
+
+.conteneurouaga img,
+.bobo img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Contenu principal */
+.contenup {
+    flex: 1;
+}
+
+.contenup h4 {
+    font-size: 1.5em;
+    margin-top: 0;
+    padding: 20px;
+}
+
+.contenup p {
+    line-height: 1.6;
+}
+
+
+
+/* Media Queries pour rendre la section responsive */
+
+@media (min-width: 768px) {
+
+    .pourouaga,
+    .pourbobo {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .conteneurouaga,
+    .bobo {
+        flex: 1;
+        text-align: left;
+        margin-right: 20px;
+    }
+
+    .contenup {
+        flex: 2;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .pourouaga,
+    .pourbobo {
+        padding: 30px;
+    }
+
+    .style {
+        font-size: 1.2em;
+    }
+}
+
+/* General Section Styling */
+.history {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    line-height: 1.6;
+}
+
+/* Heading Styles */
+.history h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+    font-family: 'Georgia', serif;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+/* Paragraph Styles */
+.history p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+    text-align: justify;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .history {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .history h2 {
+        font-size: 1.5rem;
+    }
+
+    .history p {
+        font-size: 0.9rem;
+    }
+}
+
+
+
+.map-container {
+  text-align: center;
+}
+
+.map-container img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border: 2px solid #333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.lien a{
+  color: #fff;
+}
+
+.lien :hover{
+  color: #076bee;
+}
+
+
+/*footer*/
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer-col {
+    margin-bottom: 20px;
+  }
+  
+  .footer-col h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: underline 3px solid #076bee;
+  }
+  
+  .footer-col ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer-col ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-col ul li a{
+      font-size: 16px;
+      text-transform: capitalize;
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 300;
+      color: #bbbbbb;
+      display: block;
+      transition: all 0.3s ease;
+  }
+  .footer-col ul li a:hover{
+      color: #ffffff;
+      padding-left: 8px;
+  }
+  
+  .footer-col .social-links a{
+      display: inline-block;
+      height: 40px;
+      width: 40px;
+      background-color: rgba(255,255,255,0.2);
+      margin:0 10px 10px 0;
+      text-align: center;
+      line-height: 40px;
+      border-radius: 50%;
+      color: #ffffff;
+      transition: all 0.5s ease;
+  }
+  .footer-col .social-links a:hover{
+      color: #076bee;
+      background-color: #ffffff;
+  }
+  
+  footer p {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #ccc;
+  }
+  
